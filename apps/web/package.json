@@ -1,0 +1,14 @@
+{
+  "name": "@consulting/web",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "clean": "rimraf .next out"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

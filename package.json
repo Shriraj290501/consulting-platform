@@ -1,0 +1,24 @@
+{
+  "name": "consulting-platform",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Professional consulting and education platform",
+  "scripts": {
+    "dev": "pnpm --parallel -r run dev",
+    "dev:web": "pnpm --filter @consulting/web dev",
+    "dev:api": "pnpm --filter @consulting/api dev",
+    "build": "pnpm -r run build",
+    "build:web": "pnpm --filter @consulting/web build",
+    "build:api": "pnpm --filter @consulting/api build",
+    "lint": "pnpm -r run lint",
+    "clean": "pnpm -r run clean",
+    "db:generate": "pnpm --filter @consulting/api prisma generate",
+    "db:migrate": "pnpm --filter @consulting/api prisma migrate dev",
+    "db:studio": "pnpm --filter @consulting/api prisma studio",
+    "db:seed": "pnpm --filter @consulting/api prisma db seed"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}

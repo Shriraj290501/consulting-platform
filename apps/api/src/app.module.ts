@@ -9,6 +9,7 @@ import { AuthModule } from './modules/auth/auth.module';
 import { UsersModule } from './modules/users/users.module';
 import { ServicesModule } from './modules/services/services.module';
 import { CoursesModule } from './modules/courses/courses.module';
+import { ConsultationsModule } from './modules/consultations/consultations.module';
 import { JwtAuthGuard } from './common/guards/jwt-auth.guard';
 
 @Module({
@@ -61,6 +62,7 @@ import { JwtAuthGuard } from './common/guards/jwt-auth.guard';
     UsersModule,
     ServicesModule,
     CoursesModule,
+    ConsultationsModule,
   ],
   providers: [
     {
